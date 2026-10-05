@@ -103,7 +103,7 @@ public class Zip {
         
         // Check whether a zip file exists at path.
         let path: String
-        if #available(iOS 16.0, *) {
+        if #available(iOS 16.0, macOS 13.0, *) {
             path = zipFilePath.path()
         } else {
             path = zipFilePath.path
